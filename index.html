@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Resistance Value</title>
+    <link rel="stylesheet" href="stylesU.css" />
+    <link rel="stylesheet" href="stylesR.css" />
+    <style>
+      header.banners {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: #fccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      header.banners div {
+        height: min-content;
+        text-align: center;
+      }
+      header.banners div.loading {
+        display: none;
+      }
+      header.banners div.error {
+        display: none;
+      }
+      header div * {
+        height: min-content;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="banners">
+      <div class="loading">
+        <img src="#" alt="Loading" />
+        <p>Still loading</p>
+      </div>
+      <div class="error">
+        <img src="#" alt="Error" />
+        <p>Error when loading</p>
+        <a href="#">Reload</a>
+      </div>
+    </header>
+    <article class="type">
+      <section onclick="page('tech','cap')">
+        <div>
+          <img src="./images/Capacitor_Symbol.svg" alt="Capacitor" />
+          <p>Capacitor</p>
+        </div>
+      </section>
+      <section onclick="page('tech','res')">
+        <div>
+          <img src="./images/Resistor_symbol_IEC.svg" alt="Resistance" />
+          <p>Resistance</p>
+        </div>
+      </section>
+      <section onclick="page('tech','ind')">
+        <div>
+          <img src="./images/Inductor_symbol.svg" alt="Inductor" />
+          <p>Inductor</p>
+        </div>
+      </section>
+    </article>
+    <article class="tech">
+      <section onclick="page('tht frn','smd')">
+        <div>
+          <img src="./images/0603-RES.svg" alt="SMD"/>
+          <p>SMD</p>
+        </div>
+      </section>
+      <section onclick="page('tht frn','tht')">
+        <div>
+          <img src="./images/resistor_icon_10k.svg" alt="THT"/>
+          <p>THT</p>
+        </div>
+      </section>
+    </article>
+    <article class="r tht frn">
+      <section>
+        <div>
+          <img src="#" alt="3 bands" />
+          <p>3 Bands</p>
+        </div>
+      </section>
+      <section>
+        <div>
+          <img src="./images/basic_resistor.svg" alt="4 Bands" />
+          <p>4 Bands</p>
+        </div>
+      </section>
+      <section>
+        <div>
+          <img src="./images/resistor_5bands.svg" alt="5 Bands" />
+          <p>5 Bands (Precision Resistor)</p>
+        </div>
+      </section>
+    </article>
+    <article class="r tht ccode">
+      <section></section>
+      <section></section>
+      <aside></aside>
+    </article>
+    <script src="script.js"></script>
+  </body>
+</html>

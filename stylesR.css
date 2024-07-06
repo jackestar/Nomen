@@ -1,0 +1,66 @@
+body {
+  background: var(--bg)
+}
+
+article {
+  width: 100vw;
+  height: 100vh;
+  background: var(--bg);
+  margin: 0;
+  padding: 0;
+  display: none;
+  align-items: center;
+  justify-content: space-around;
+  opacity: 0;
+  transition: .2s ease-out;
+}
+article.apear {
+  opacity: 1;
+  transition: .2s ease-in;
+}
+
+article section {
+  text-align: center;
+  padding: 5%;
+  transition: .4s ease-out;
+  flex: auto;
+  min-width: 25%;
+  max-width: 50%;
+  font-size: 1.5em;
+}
+
+article section div {
+  width:auto;
+  height: 40vh;
+  background: #aaa;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+article section img {
+  min-height: 30%;
+  max-height: 75%;
+  max-width: 55%;
+  transition:.2s ease-out
+}
+article section:hover img {
+  min-height: 35%;
+  max-height: 80%;
+  max-width: 60%;
+  transition:.2s ease-in
+}
+
+article section:hover {
+/*   flex: 50%; */
+  font-size: 1.75em;
+  transition: .3s ease-in;
+}
+
+article section p {
+  font-variant: all-petite-caps;
+  font-weight: 500;
+}
