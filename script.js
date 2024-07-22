@@ -8,7 +8,7 @@ let info = {
 }
 
 let init = document.getElementsByClassName(prev_page)[0]
-init.style.display = 'flex'
+init.style.display = 'grid'
 
 page = (page='type',change=undefined) => {
     a = document.getElementsByClassName(page)[0]
@@ -16,7 +16,7 @@ page = (page='type',change=undefined) => {
         document.getElementsByClassName(prev_page)[0].classList.remove('apear')
         setTimeout(() => {
             document.querySelectorAll('body>article').forEach(a=>{a.style.display = 'none'})
-            a.style.display='flex'
+            a.style.display='grid'
             setTimeout(()=>{
                 a.classList.add('apear')
             },201)
